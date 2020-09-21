@@ -7,8 +7,8 @@
 		<parameter name="platform" value="Chrome" />
 		<parameter name="local" value="true" />
 		<classes>
-<!-- 			<class name="test.CadastroUsuario" /> -->
-<!-- 			<class name="test.Login" /> -->
+			<class name="test.CadastroUsuario" />
+			<class name="test.Login" />
 			<class name="test.MantemFuncionarios" />
 		</classes>
 	</test>
