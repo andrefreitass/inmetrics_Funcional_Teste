@@ -1,0 +1,131 @@
+[
+ {
+	"id": "init",
+	"Cenário": "Pré Condições de Teste",	
+	"casosTestes":[{
+		"usuario": "automacaoTeste",
+		"senha": "automacaoTeste" 
+		}]
+	},
+	{
+		"id": "CEN01",
+		"Cenário": "Valida Campos Obrigatorios",
+		"casosTestes": [
+			{
+					"CT": "CT01 - Campos Não Informados",					
+					"nome":"",
+					"cpf":"",
+					"sexo":"",
+					"admissao":"",
+					"cargo":"",
+					"salario":"",
+					"tipoContratacao":"",
+					"baseline":"Preencha este campo."
+			}
+			
+
+		]
+	},
+		{
+		"id": "CEN02",
+		"Cenário": "Valida CPF inválido",
+		"casosTestes": [
+			{
+					"CT": "CT02 - Valida Cpf inválido",					
+					"nome":"Automacao Teste",
+					"cpf":"12347896500",
+					"baseline":"CPF inválido!"
+			}
+		]
+	},
+	{
+		"id": "CEN03",
+		"Cenário": "Valida Campos Obrigatorios",
+		"casosTestes": [
+			{
+					"CT": "CT04 - Cancelamento cadastro funcionario",					
+					"nome":"Sexo indefinido",
+					"cpf":"421.131.460-29",
+					"sexo":"Indiferente",
+					"admissao":"18/09/2020",
+					"cargo":"analista automação",
+					"salario":"15.000,00",
+					"tipoContratacao":"clt"
+			}
+		]
+	},
+		{
+		"id": "CEN04",
+		"Cenário": "Realiza cadastro de funcionario com sucesso",
+		"casosTestes": [
+			{
+					"CT": "CT05 - Realizar cadastro funcionario sexo indiferente",					
+					"nome":"Sexo indefinido",
+					"cpf":"421.131.460-29",
+					"sexo":"Indiferente",
+					"admissao":"18/09/2020",
+					"cargo":"analista automação",
+					"salario":"15.000,00",
+					"tipoContratacao":"clt",
+					"baseline":"SUCESSO! Usuário cadastrado com sucesso"
+			},
+			{
+					"CT": "CT06 - Realizar cadastro funcionario sexo feminino",					
+					"nome":"Sexo feminino",
+					"cpf":"421.131.460-29",
+					"sexo":"feminino",
+					"admissao":"18/09/2020",
+					"cargo":"analista automação",
+					"salario":"15.000,00",
+					"tipoContratacao":"pj",
+					"baseline":"SUCESSO! Usuário cadastrado com sucesso"
+					
+			},
+			{
+					"CT": "CT07 - Realizar cadastro funcionario sexo masculino",					
+					"nome":"Sexo masculino",
+					"cpf":"421.131.460-29",
+					"sexo":"masculino",
+					"admissao":"18/09/2020",
+					"cargo":"analista automação",
+					"salario":"15.000,00",
+					"tipoContratacao":"clt",
+					"baseline":"SUCESSO! Usuário cadastrado com sucesso"
+					
+			}		
+
+		]
+	},
+		{
+		"id": "CEN05",
+		"Cenário": "Alterar funcionario",
+		"casosTestes": [
+			{
+					"CT": "CT08 - Alterar funcionario",					
+					"filtroPesquisa":"Sexo indefinido",
+					"nome":"Sexo indefinido alteração",
+					"cpf":"421.131.460-29",
+					"sexo":"Masculino",
+					"admissao":"19/09/2020",
+					"cargo":"alteração automação teste",
+					"salario":"30.000,00",
+					"tipoContratacao":"pj",
+					"baseline":"SUCESSO! Informações atualizadas com sucesso"
+			}
+		]
+	},
+		{
+		"id": "CEN06",
+		"Cenário": "Alterar funcionario",
+		"casosTestes": [
+			{
+					"CT": "CT08 - Alterar funcionario",					
+					"filtroPesquisa":"Sexo indefinido alteração",
+					"baseline":"SUCESSO! Funcionário removido com sucesso"
+			}
+		]
+	}
+ 
+ 
+ 
+]

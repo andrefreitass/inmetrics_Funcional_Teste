@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Teste" parallel="tests" thread-count="20"
+	group-by-instances="true">
+
+	<test name="Suite Inmetrics">
+		<parameter name="platform" value="Chrome" />
+		<parameter name="local" value="true" />
+		<classes>
+<!-- 			<class name="test.CadastroUsuario" /> -->
+<!-- 			<class name="test.Login" /> -->
+			<class name="test.MantemFuncionarios" />
+		</classes>
+	</test>
+
+
+</suite>

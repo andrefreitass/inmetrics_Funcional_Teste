@@ -1,0 +1,68 @@
+[
+	{
+		"id": "CEN01",
+		"Cenário": "Valida Campos Obrigatorios",
+		"casosTestes": [
+			{
+					"CT": "CT01 - Campos Não Informados",					
+					"usuario":"",
+					"senha":"",
+					"baseline":"Campo obrigatório;Campo obrigatório"
+			},
+			{
+					"CT": "CT02 - Campo Usuario Não Informado",					
+					"usuario":"",
+					"senha":"automacaoTeste",
+					"baseline":"Campo obrigatório;Campo obrigatório"
+			},
+			{
+					"CT": "CT03 - Campo Senha Não Informado",					
+					"usuario":"automacaoTeste",
+					"senha":"",
+					"baseline":"Campo obrigatório;Campo obrigatório"
+			}
+
+		]
+	},
+		{
+		"id": "CEN02",
+		"Cenário": "Dados Inválidos",
+		"casosTestes": [
+			{
+					"CT": "CT04 - Usuário não cadastrado",					
+					"usuario":"usuarioNaoCadastrado",
+					"senha":"automacaoTeste",
+					"baseline":"ERRO! Usuário ou Senha inválidos"
+			},
+			{
+					"CT": "CT05 - Campo Usuario Não Informado",					
+					"usuario":"automacaoTeste",
+					"senha":"123",
+					"baseline":"ERRO! Usuário ou Senha inválidos"
+			}
+		]
+	},
+	{
+		"id": "CEN03",
+		"Cenário": "Realiza login sucesso",
+		"casosTestes": [
+			{
+					"CT": "CT06 - Realiza Login Sucesso",					
+					"usuario":"automacaoTeste",
+					"senha":"automacaoTeste"
+			}
+		]
+	},
+		{
+		"id": "CEN04",
+		"Cenário": "Realiza Logout",
+		"casosTestes": [
+			{
+					"CT": "CT07 - Realiza Logout",					
+					"usuario":"automacaoTeste",
+					"senha":"automacaoTeste"
+			}
+		]
+	}
+ 
+]

@@ -1,0 +1,96 @@
+[
+	{
+		"id": "CEN01",
+		"Cenário": "Valida Campos Obrigatorios",
+		"casosTestes": [
+			{
+					"CT": "CT01 - Campos Não Informados",					
+					"usuario":"",
+					"senha":"",
+					"confirmacaoSenha":"",
+					"baseline":"Campo obrigatório;Campo obrigatório;Campo obrigatório"
+			},
+			{
+					"CT": "CT02 - Campo Usuario Não Informado",					
+					"usuario":"",
+					"senha":"automacao",
+					"confirmacaoSenha":"automacao",
+					"baseline":"Campo obrigatório;Campo obrigatório"
+			},
+			{
+					"CT": "CT03 - Campo Senha Não Informado",					
+					"usuario":"automacao",
+					"senha":"",
+					"confirmacaoSenha":"automacao",
+					"baseline":"Campo obrigatório;Campo obrigatório"
+			},
+			{
+					"CT": "CT04 - Campo Confirmação Senha Não Informado",					
+					"usuario":"automacao",
+					"senha":"automacao",
+					"confirmacaoSenha":"",
+					"baseline":"Campo obrigatório;Campo obrigatório"
+			},
+						{
+					"CT": "CT05 - Senhas não informadas",					
+					"usuario":"automacao",
+					"senha":"",
+					"confirmacaoSenha":"",
+					"baseline":"Campo obrigatório;Campo obrigatório"
+			}
+		]
+	},
+	
+		{
+		"id": "CEN02",
+		"Cenário": "Valida Campos Tamanho inválidos",
+		"casosTestes": [
+			{
+					"CT": "CT06 - Campo Usuário Preenchido com Valor Menor que o padrão",					
+					"usuario":"auto",
+					"senha":"automacaoTeste",
+					"confirmacaoSenha":"automacaoTeste",
+					"baseline":"Aumente esse texto para 8 caracteres ou mais. No momento, você está usando 4 caracteres)."
+			}			
+		]
+	},
+	{
+		"id": "CEN03",
+		"Cenário": "Senhas Com Valores Diferentes",
+		"casosTestes": [
+			{
+					"CT": "CT07 - Senha com valor diferente do valor da confirmação de senha",					
+					"usuario":"automacaoTeste",
+					"senha":"123",
+					"confirmacaoSenha":"4534",
+					"baseline":"Senhas não combinam"
+			}			
+		]
+	},
+	
+	{
+		"id": "CEN04",
+		"Cenário": "Usuário Já Cadastrado",
+		"casosTestes": [
+			{
+					"CT": "CT08 - Usuário Já Cadastrado",					
+					"usuario":"automacaoTeste",
+					"senha":"automacaoTeste",
+					"confirmacaoSenha":"automacaoTeste",
+					"baseline":"Usuário já cadastrado"
+			}			
+		]
+	},
+	{
+		"id": "CEN05",
+		"Cenário": "Realiza Casdastro Com Sucesso",
+		"casosTestes": [
+			{
+					"CT": "CT09 - Realiza Cadastro Com Sucesso",
+					"senha":"automacaoTeste",
+					"confirmacaoSenha":"automacaoTeste"
+			}			
+		]
+	}
+	
+]
