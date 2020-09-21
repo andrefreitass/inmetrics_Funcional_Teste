@@ -37,8 +37,8 @@ public class Datapool {
 
 
 	/**
-	 * Metodo para carregar arquivo Json e armazenar lista de cenï¿½rios
-	 * @dpFull Variavel definida com execuï¿½ï¿½o do mï¿½todo
+	 * Metodo para carregar arquivo Json e armazenar lista de cenarios
+	 * @dpFull Variavel definida com execuçaõ do metodo teste
 	 */
 
 	public void getDatapoolJson() {
@@ -52,7 +52,7 @@ public class Datapool {
 
 	/**
 	 * Metodo para obter caso de teste, com base no ID declarado no Json e nome do
-	 * mï¿½todo de testes
+	 * metodo de testes
 	 * @return Objeto Json iteravel
 	 */
 	@SuppressWarnings("unchecked")
@@ -67,7 +67,7 @@ public class Datapool {
 
 	/**
 	 * Metodo para obter caso de teste, com base no ID declarado no Json e nome do
-	 * mï¿½todo de testes
+	 * metodo de testes
 	 * @return Objeto Json iteravel
 	 */
 	public ArrayList<JsonPath>  getTestCasesToJsonPath() {
